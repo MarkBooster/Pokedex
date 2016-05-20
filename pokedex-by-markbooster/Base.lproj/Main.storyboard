@@ -189,6 +189,9 @@
                                             <constraint firstAttribute="width" constant="46" id="Sze-S7-kJ8"/>
                                         </constraints>
                                         <state key="normal" image="back"/>
+                                        <connections>
+                                            <action selector="backBtnPressed:" destination="TmH-HP-N0g" eventType="touchUpInside" id="UZt-QT-HSF"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.34509803919999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
@@ -227,9 +230,9 @@
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="dXJ-GK-cs9">
                                                 <rect key="frame" x="120" y="0.0" width="440" height="120"/>
-                                                <mutableString key="text">Pokemon font here refers to the font used in the Pokemon logo. Pokemon is a series of video games first released in 1996 in Japan. The name Pokemon originates from the its Japanese brand name Poketto Monsutā ポケットモンスター , meaning Pocket Monsters. Due to the extreme popularity of the game, it has been merchandised into anime, manga, trading cards, toys, books etc.</mutableString>
+                                                <string key="text">Pokemon font here refers to the font used in the Pokemon logo. Pokemon is a series of video games first released in 1996 in Japan. The name Pokemon originates from the its Japanese brand name Poketto Monsutā ポケットモンスター , meaning Pocket Monsters. Due to the extreme popularity of the game, it has been merchandised into anime, manga, trading cards, toys, books etc.</string>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
@@ -398,7 +401,18 @@
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="attackLbl" destination="1A2-eI-3cf" id="Jd8-PR-OGS"/>
+                        <outlet property="currentEvoImg" destination="NdB-8z-5Lq" id="wpa-zH-F7x"/>
+                        <outlet property="defenseLbl" destination="eQm-Sm-wLz" id="3aq-CW-oPr"/>
+                        <outlet property="descriptionLbl" destination="dXJ-GK-cs9" id="Fls-8B-PqF"/>
+                        <outlet property="evoLbl" destination="biQ-Y2-DtU" id="OsQ-if-XVo"/>
+                        <outlet property="heightLbl" destination="IyU-87-JAY" id="LIQ-BS-nsw"/>
+                        <outlet property="mainImg" destination="f2p-Hg-0sg" id="l3i-Ih-TvX"/>
                         <outlet property="nameLbl" destination="kJQ-R0-cS4" id="PcJ-Dz-hRB"/>
+                        <outlet property="nextEvoImg" destination="RF7-e6-HEe" id="yE6-0c-4bi"/>
+                        <outlet property="pokedexLbl" destination="4fP-og-dLV" id="i3e-cF-4e2"/>
+                        <outlet property="typeLbl" destination="Uki-4t-i1L" id="GAI-tw-gHB"/>
+                        <outlet property="weightLbl" destination="jiD-jn-pOj" id="aNr-99-w8V"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vh6-gG-iJp" userLabel="First Responder" sceneMemberID="firstResponder"/>
